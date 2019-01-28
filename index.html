@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Validation</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form method="post" class="login">
+        <div class="login-heading">
+            <h1 class="login-heading-title">Login</h1>
+            <p class="login-heading-subtitle">Form validation</p>
+        </div>
+
+        <div class="login-input-area">
+            <p class="login-input-title login-input-require">Email</p>
+            <span class="warning-text warning-text-email"></span>
+            <input type="text" name="email" placeholder="xxxxx@xxx.xx" class="login-input valid-email">
+        </div>
+        <div class="login-input-area">
+            <p class="login-input-title login-input-require">Password</p>
+            <span class="warning-text warning-text-pass"></span>
+            <input type="text" name="pass" placeholder="lease enter at least 6 characters." class="login-input valid-pass">
+        </div>
+        <div class="login-input-area">
+            <p class="login-input-title login-input-require">Re-enter Password</p>
+            <span class="warning-text warning-text-re-pass"></span>
+            <input type="text" name="re-pass" placeholder="Retype password." class="login-input valid-re-pass">
+        </div>
+
+        <input type="submit" value="login" disabled class="login-submit valid-submit">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
